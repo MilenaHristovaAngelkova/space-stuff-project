@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/space-stuff-project/static/css/main.4dd85fe2.chunk.css",
+    "main.css": "/space-stuff-project/static/css/main.ef78f84f.chunk.css",
     "main.js": "/space-stuff-project/static/js/main.81144891.chunk.js",
     "main.js.map": "/space-stuff-project/static/js/main.81144891.chunk.js.map",
     "runtime-main.js": "/space-stuff-project/static/js/runtime-main.e4353036.js",
@@ -10,14 +10,14 @@
     "static/js/3.45fa3e35.chunk.js": "/space-stuff-project/static/js/3.45fa3e35.chunk.js",
     "static/js/3.45fa3e35.chunk.js.map": "/space-stuff-project/static/js/3.45fa3e35.chunk.js.map",
     "index.html": "/space-stuff-project/index.html",
-    "static/css/main.4dd85fe2.chunk.css.map": "/space-stuff-project/static/css/main.4dd85fe2.chunk.css.map",
+    "static/css/main.ef78f84f.chunk.css.map": "/space-stuff-project/static/css/main.ef78f84f.chunk.css.map",
     "static/js/2.b83fc306.chunk.js.LICENSE.txt": "/space-stuff-project/static/js/2.b83fc306.chunk.js.LICENSE.txt",
     "static/media/App.css": "/space-stuff-project/static/media/jeremy-perkins-uhjiu8FjnsQ-unsplash_modified.4d4cfcfc.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.e4353036.js",
     "static/js/2.b83fc306.chunk.js",
-    "static/css/main.4dd85fe2.chunk.css",
+    "static/css/main.ef78f84f.chunk.css",
     "static/js/main.81144891.chunk.js"
   ]
 }
