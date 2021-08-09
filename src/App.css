@@ -46,7 +46,7 @@ header {
 .home article {
   color: white;
   max-width: 50vw;
-  padding: 1vh 1vw;
+  padding: 5vh 1vw;
 }
 
 .content-image img {
@@ -56,7 +56,7 @@ header {
 
 /* responsive adjustments */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1115px) {
   header {  
     font-size: 1rem;
     margin: 3vh auto;
@@ -82,8 +82,20 @@ header {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width:700px) {
+@media screen and (min-width: 320px) and (max-width: 1115px) {
   .home button {
-   border-radius: 10%;
+    border-radius: 10%;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 1115px) {
+  .home button {
+    width: 35vw;
+  }
+}
+
+@media screen and (max-width: 210px) {
+  .home button {
+    font-size: 0.95rem;
   }
 }

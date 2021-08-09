@@ -28,21 +28,23 @@ const Home = () => {
         })        
     }
 
-    const handleOnClickPeopleInfo = () => {
-        fetch("http://api.open-notify.org/astros.json")
+    const handleOnClickData = () => {
+        fetch("https://ssd-api.jpl.nasa.gov/cad.api")
         .then(res => {
             if (!res.ok) {
                 throw new Error("Could not fetch the people details from this source.")
             }
             return res.json();
         })
-        .then(data => {
-            const title = `<h3>List of people currently in space</h3>`;
-            const template = data.people.map(person => {
-                return `<li>${person.name} is currently on ${person.craft}</li>`;
-            })
+        .then(details => {
+            const title = `<h3>NEO Earth close-approaches of less than 0.05 au in the next 60 days</h3>`;
+            const total = `<h4>Total expected close approaches: ${details.count}</h4>`;
+            
+            const template = details.data.map(el => {
+                return `<li>Asteroid/comet designation <strong>"${el[0]}"</strong> will be close to Earth on <strong>${el[3]}</strong>.</li>`
+            });
 
-            document.querySelector(".content-people").innerHTML = title + template;
+            document.querySelector(".content-data").innerHTML = title + total + template;
         })
         .catch(err => {
             const template = `
@@ -50,17 +52,17 @@ const Home = () => {
                 <p>${err.message}</p>
             </div>
             `
-            document.querySelector(".content-people").innerHTML = template;
+            document.querySelector(".content-data").innerHTML = template;
         })   
     }
 
     return (
         <div className="home">
             <button id="get-image" onClick={handleOnClickImage}>Get image of the day</button>
-            <button id="get-story" onClick={handleOnClickPeopleInfo}>Get info on people in space</button>
+            <button id="get-story" onClick={handleOnClickData}>Get asteroids and comets close-approach data</button>
             <article className="content-image">                
             </article>
-            <article className="content-people">
+            <article className="content-data">
             </article>
         </div>
     );
