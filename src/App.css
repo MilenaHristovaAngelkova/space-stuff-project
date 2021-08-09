@@ -62,10 +62,14 @@ td {
   margin: 0 auto;
 }
 
+td {
+  padding: 1px 30px;
+}
+
 /* responsive adjustments */
 
 @media screen and (max-width: 1115px) {
-  header {  
+  header, h3 {  
     font-size: 1rem;
     margin: 3vh auto;
   }
@@ -102,8 +106,25 @@ td {
   }
 }
 
-@media screen and (max-width: 210px) {
+@media screen and (max-width: 340px) {
   .home button {
     font-size: 0.95rem;
+  }
+
+  .content-image {
+    font-size: 0.8rem;
+  }
+
+  h4 {
+    font-size: 0.9rem;
+  }
+
+  th {
+    font-size: 0.9rem;
+  }
+
+  td {
+    padding: 0 5px;
+    font-size: 0.8rem;
   }
 }
