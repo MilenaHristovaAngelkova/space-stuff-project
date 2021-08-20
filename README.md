@@ -1,6 +1,6 @@
 # Cool Space Stuff
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It fetches space-related info from free NASA APIs.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It fetches space-related info from free NASA APIs. You can see it here: https://milenahristovaangelkova.github.io/space-stuff-project/.
 
 ## Available Scripts
 
